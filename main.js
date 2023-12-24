@@ -1,4 +1,7 @@
 import './style.css'
+import {app} from './src/todos/app';
+import initStore from './src/store/todo.store';
 
 
-console.log('Hello world');
+initStore.initStore();
+app('#app');
